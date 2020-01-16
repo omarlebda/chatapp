@@ -1,0 +1,31 @@
+{% extends "layout.html" %}
+{% block body %}
+		<!-- aside nav with list of channels -->
+		<div style="float: right;" class="col-4">
+			<nav id="room-nav">
+				<b id="name-of-client"></b>
+				<button type="button" id="clear">Clear Chat</button>
+				<h4>Rooms</h4>
+
+				{% for room in rooms %}
+					<p class="select-room">{{ room }}</p>
+				{% endfor %}
+				
+			</nav>
+			<input type="text" name="message" id="create-room">
+			<button type="button" id="create-btn">Create</button>
+		</div>
+
+		<!-- message and type message section -->
+		<div style="float: left;" class="col-6">
+			<div id="display-msg">
+				{% for mssg in messages %}
+					<p>{{ mssg }}</p>
+				{% endfor %}
+			</div>
+			<input type="text" name="message" id="input-msg">
+			<button type="button" id="send-btn">Send</button>
+			
+		</div>
+
+{% endblock %}

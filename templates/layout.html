@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Flack</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<script src="{{ url_for('static', filename='index.js') }}"></script>
+	<script src="//cdnjs.cloudflare.com/ajax/libs/socket.io/2.2.0/socket.io.js" integrity="sha256-yr4fRk/GU1ehYJPAs8P4JlTgu0Hdsp4ZKrx8bDEDC3I=" crossorigin="anonymous"></script>
+</head>
+<body>
+	<!-- As a heading -->
+	<nav class="navbar navbar-light bg-light">
+	  <span class="navbar-brand mb-0 h1">Flack</span>
+	</nav>
+
+	<div class="container">
+		{% block heading %} {% endblock %}
+
+		{% block body %}
+			
+		{% endblock %}
+	</div>
+</body>
+</html>
