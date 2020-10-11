@@ -2,6 +2,9 @@
 
 Web Programming with Python and JavaScript
 
+chat web application using flask framework, socket-io and javascript
+link of the video of the chat application:
+https://www.youtube.com/watch?v=WzuutzGXWsE&t=155s
 
 Server-side manuals:
 
